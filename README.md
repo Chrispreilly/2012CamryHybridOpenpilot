@@ -42,3 +42,11 @@ I have all messages being sent over the OBD CAN bus. As long as the steering con
 ##### Inputs from Motor Controller to Openpilot:
 - CAN Safety Check
 
+### Safety
+- Belt Tension should never exceed what the driverr can override
+- Arduino sends a CAN check message every 100ms. If openpilot doesn't hear the message for 250ms it will disengage
+- If Arduino sees a gap betwwen recieving Desired Angle from Openpilot or Current Angle from the car it will turn off the motor
+- If Openpilot sees a delta between current angle and desired angl of >5 degrees (meaning user override or motor lost power) it will disengage
+
+
+
