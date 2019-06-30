@@ -1,3 +1,7 @@
+
+Got a 2018 subaru, moving the forked OP to https://github.com/c-reilly/openpilot-2012camryhybrid
+
+
 # 2012 Toyota Camry Hybrid Openpilot
 
 
